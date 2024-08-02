@@ -1,0 +1,208 @@
+:root {
+  --primary: #69503c;
+  --secondary: #c7b69f;
+  --tertiary: #c69c93;
+  --quaternary: #e3cabf;
+  --background: #fff9e1;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+body {
+  background-color: var(--background);
+}
+
+nav {
+  background-color: var(--primary);
+  color: var(--background);
+  height: 64px;
+  width: 100%;
+  display: flex;
+
+  align-items: center;
+  padding: 0 16px;
+
+  -webkit-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.75);
+}
+
+nav .title {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  gap: 4px;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.content {
+  width: 100%;
+  max-width: 1280px;
+  padding: 32px 16px;
+}
+
+.nav-content {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 1280px;
+  gap: 64px
+}
+
+nav .buttons {
+  display: flex;
+  align-items: center;
+  gap: 32px
+}
+
+nav .buttons a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  color: var(--background);
+  text-decoration: none;  
+  transition-duration: 0.2s;
+}
+
+nav .buttons a:hover {
+  color: var(--secondary);
+  text-decoration: none;  
+}
+
+.cars {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 32px;
+  align-items: center;
+  justify-content: center;
+}
+
+.title-cars {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 500;
+  margin-bottom: 32px;
+  color: var(--primary);
+}
+
+.divsCarro {
+  width: 360px;
+  color: #fff9e1;
+  font-weight: 500;
+  font-size: 30px;
+  text-align: center;
+  background-color: var(--primary);
+  border-radius: 15px;
+  -webkit-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.75);
+
+  cursor: pointer;
+  transition-duration: 0.3s;
+}
+
+.divsCarro img {
+  width: 400px;
+  height: 260px;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.divsCarro button {
+  display: none;
+}
+
+.divsCarro:hover {
+  filter: brightness(0.8);
+  color: var(--secondary);
+}
+
+.divsCarro:hover img {
+  filter: grayscale(75%);
+}
+
+.divsCarro:hover button {
+  display: block;
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  background-color: var(--primary);
+  color: var(--background);
+  border: none;
+  border-radius: 8px;
+  opacity: 1;
+  font-size: 24px;
+}
+
+.preco {
+  color: #fff;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  color: var(--primary);
+  max-width: 720px;
+  margin: 0 auto;
+  margin-top: 32px;
+}
+form input{
+  padding: 15px;
+  outline: none;
+  border: 1;
+  margin-bottom: 20px;
+  font-size: 15px;}
+.sugestao {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  margin-top: 15px;
+}
+
+.radios {
+  display: flex;
+  gap: 32px;
+}
+
+.submit-button {
+  margin-top: 32px;
+  background-color: var(--primary);
+  color: var(--background);
+  font-weight: 500;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 8px;
+  transition-duration: 0.3s;
+  cursor: pointer;
+}
+
+.submit-button:hover {
+  filter: brightness(0.8);
+}
